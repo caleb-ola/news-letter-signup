@@ -50,7 +50,7 @@ app.post("/",(req,res) => {
             console.log(response.statusCode);            
          });  
     });
-    //request.write(jsonData);
+    request.write(jsonData);
     request.end();
     // console.log(Fname + " " + Lname + " " +imail);
 });
